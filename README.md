@@ -28,10 +28,16 @@ pipenv --venv
 
 and appending `/bin/python` to the result.
 
+## Usage
+
+**Note**: The `.vscode` directory is preconfigured for running solutions and tests in VS Code.
+
 ## Running final solutions
 
+For example:
+
 ```sh
-pipenv run python 01/inverse_captcha.py # (For example)
+pipenv run python 01/inverse_captcha.py
 ```
 
 ## Running tests
@@ -39,5 +45,3 @@ pipenv run python 01/inverse_captcha.py # (For example)
 ```sh
 pipenv run pytest
 ```
-
-(Alternatively, [VS Code](https://code.visualstudio.com/).)
