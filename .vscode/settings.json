@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/Users/Oliver/.local/share/virtualenvs/advent-of-code--7ZX3fY0/bin/python",
+    "python.unitTest.pyTestEnabled": true,
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "cSpell.words": [
+        "captcha"
+    ]
+}
