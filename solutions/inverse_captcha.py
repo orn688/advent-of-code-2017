@@ -8,8 +8,8 @@ def main():
 
     sequence = get_input_for_day(1)
 
-    print(f'Part1: {part1(sequence)}')
-    print(f'Part2: {part2(sequence)}')
+    print(f'Part 1: {part1(sequence)}')
+    print(f'Part 2: {part2(sequence)}')
 
 
 def part1(sequence):
@@ -41,7 +41,7 @@ def part2(sequence):
         next_num = sequence[(i + halfway) % len(sequence)]
         if num == next_num:
             total += int(num)
-    
+
     return total
 
 
