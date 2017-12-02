@@ -1,12 +1,13 @@
 """
 Day 1: Inverse Captcha
 """
+DAY = 1
 
 
 def main():
     from utils import get_input_for_day
 
-    sequence = get_input_for_day(1)
+    sequence = get_input_for_day(DAY)
 
     print(f'Part 1: {part1(sequence)}')
     print(f'Part 2: {part2(sequence)}')

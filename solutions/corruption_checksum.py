@@ -1,12 +1,13 @@
 """
 Day 2: Corruption Checksum
 """
+DAY = 2
 
 
 def main():
     from utils import get_input_for_day
 
-    spreadsheet = get_input_for_day(2)
+    spreadsheet = get_input_for_day(DAY)
 
     print(f'Part 1: {part1(spreadsheet)}')
     print(f'Part 2: {part2(spreadsheet)}')
