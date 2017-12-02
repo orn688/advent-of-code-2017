@@ -30,14 +30,12 @@ and appending `/bin/python` to the result.
 
 ## Usage
 
-**Note**: The `.vscode` directory is preconfigured for running solutions and tests in VS Code.
+**Note**: The `.vscode` directory is pre-configured for running solutions and tests in VS Code.
 
 ## Running final solutions
 
-For example:
-
 ```sh
-pipenv run python 01/inverse_captcha.py
+pipenv run python solutions/inverse_captcha.py # (For example)
 ```
 
 ## Running tests
