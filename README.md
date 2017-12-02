@@ -13,7 +13,7 @@ My solutions to the 2017 [Advent of Code](http://adventofcode.com/) problems.
   ```sh
   pip install pipenv
   ```
-4. Install dependencies: `pipenv install`
+4. Install dependencies:
   ```sh
   pipenv install
   ```
