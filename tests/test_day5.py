@@ -1,17 +1,17 @@
-from solutions import jump_maze
+from solutions import day5
 
 
-def test_jump_maze_part1():
+def test_day5_part1():
     test_cases = {
         (0, 3, 0, 1, -3): 5,
         (-1, 2): 1,
     }
 
     for jumps, expected in test_cases.items():
-        assert jump_maze.part1(list(jumps)) == expected
+        assert day5.part1(list(jumps)) == expected
 
 
-def test_jump_maze_part2():
+def test_day5_part2():
     test_cases = {
         (0, 3, 0, 1, -3): 10,
         (-1, 2): 1,
@@ -19,4 +19,4 @@ def test_jump_maze_part2():
     }
 
     for jumps, expected in test_cases.items():
-        assert jump_maze.part2(list(jumps)) == expected
+        assert day5.part2(list(jumps)) == expected

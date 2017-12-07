@@ -1,7 +1,7 @@
-from solutions import spiral_memory
+from solutions import day3
 
 
-def test_spiral_memory_part1():
+def test_day3_part1():
     test_cases = {
         1: 0,
         12: 3,
@@ -14,10 +14,10 @@ def test_spiral_memory_part1():
     }
 
     for address, expected in test_cases.items():
-        assert spiral_memory.part1(address) == expected
+        assert day3.part1(address) == expected
 
 
-def test_spiral_memory_part2():
+def test_day3_part2():
     test_cases = {
         1: 2,
         2: 4,
@@ -27,4 +27,4 @@ def test_spiral_memory_part2():
     }
 
     for address, expected in test_cases.items():
-        assert spiral_memory.part2(address) == expected
+        assert day3.part2(address) == expected
