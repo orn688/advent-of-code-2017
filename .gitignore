@@ -1,3 +1,6 @@
+# Inputs to AoC puzzles
+/puzzle_inputs
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
