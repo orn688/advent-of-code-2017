@@ -7,10 +7,10 @@ DAY = 5
 def main():
     from utils import get_input_for_day
 
-    raw_jumps = [int(jump) for jump in get_input_for_day(DAY).split()]
+    jumps = [int(jump) for jump in get_input_for_day(DAY).split()]
 
-    print(f'Part 1: {part1(raw_jumps)}')
-    print(f'Part 2: {part2(raw_jumps)}')
+    # print(f'Part 1: {part1(jumps[:])}')
+    print(f'Part 2: {part2(jumps[:])}')
 
 
 def part1(jumps):
@@ -38,6 +38,8 @@ def part2(jumps):
     curr = 0
     steps = 0
     while curr >= 0 and curr < len(jumps):
+        if steps % 1000000 == 0:
+            print(steps)
         offset = jumps[curr]
         if offset >= 3:
             jumps[curr] -= 1
