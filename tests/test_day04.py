@@ -1,7 +1,7 @@
-from solutions import day4
+from solutions import day04
 
 
-def test_day4_part1():
+def test_day04_part1():
     test_cases = {
         ('aa bb cc dd ee',): 1,
         ('aa bb cc dd aa',): 0,
@@ -9,11 +9,11 @@ def test_day4_part1():
     }
 
     for passphrases, expected in test_cases.items():
-        assert day4.part1(passphrases) == expected
+        assert day04.part1(passphrases) == expected
 
 
 
-def test_day4_part2():
+def test_day04_part2():
     test_cases = {
         ('abcde fghij',): 1,
         ('abcde xyz ecdab',): 0,
@@ -23,4 +23,4 @@ def test_day4_part2():
     }
 
     for passphrases, expected in test_cases.items():
-        assert day4.part2(passphrases) == expected
+        assert day04.part2(passphrases) == expected

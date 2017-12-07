@@ -1,17 +1,17 @@
-from solutions import day5
+from solutions import day05
 
 
-def test_day5_part1():
+def test_day05_part1():
     test_cases = {
         (0, 3, 0, 1, -3): 5,
         (-1, 2): 1,
     }
 
     for jumps, expected in test_cases.items():
-        assert day5.part1(list(jumps)) == expected
+        assert day05.part1(list(jumps)) == expected
 
 
-def test_day5_part2():
+def test_day05_part2():
     test_cases = {
         (0, 3, 0, 1, -3): 10,
         (-1, 2): 1,
@@ -19,4 +19,4 @@ def test_day5_part2():
     }
 
     for jumps, expected in test_cases.items():
-        assert day5.part2(list(jumps)) == expected
+        assert day05.part2(list(jumps)) == expected

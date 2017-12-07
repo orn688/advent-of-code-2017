@@ -1,7 +1,7 @@
-from solutions import day1
+from solutions import day01
 
 
-def test_day1_part1():
+def test_day01_part1():
     test_cases = {
         '': 0,
         '1122': 3,
@@ -11,10 +11,10 @@ def test_day1_part1():
     }
 
     for sequence, expected in test_cases.items():
-        assert day1.part1(sequence) == expected
+        assert day01.part1(sequence) == expected
 
 
-def test_day1_part2():
+def test_day01_part2():
     test_cases = {
         '': 0,
         '1212': 6,
@@ -25,4 +25,4 @@ def test_day1_part2():
     }
 
     for sequence, expected in test_cases.items():
-        assert day1.part2(sequence) == expected
+        assert day01.part2(sequence) == expected
