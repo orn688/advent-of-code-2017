@@ -1,4 +1,4 @@
-from solutions import day06
+from solutions.day06 import Solution
 
 
 def test_day06_part1():
@@ -7,7 +7,7 @@ def test_day06_part1():
     }
 
     for banks, expected in test_cases.items():
-        assert day06.part1(list(banks)) == expected
+        assert Solution.part1(list(banks)) == expected
 
 
 def test_day06_part2():
@@ -16,4 +16,4 @@ def test_day06_part2():
     }
 
     for banks, expected in test_cases.items():
-        assert day06.part2(list(banks)) == expected
+        assert Solution.part2(list(banks)) == expected

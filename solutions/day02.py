@@ -1,47 +1,44 @@
 """
 Day 2: Corruption Checksum
 """
-DAY = 2
+from solution_base import SolutionBase
 
 
-def main():
-    from utils import get_input_for_day
+class Solution(SolutionBase):
+    day = 2
 
-    spreadsheet = get_input_for_day(DAY)
+    @staticmethod
+    def process_input(input_raw):
+        return [int(num) for num in input_raw.split('\n')]
 
-    print(f'Part 1: {part1(spreadsheet)}')
-    print(f'Part 2: {part2(spreadsheet)}')
+    @staticmethod
+    def part1(spreadsheet):
+        """
+        Calculate the sum of the differences between the min and the max
+        value in each row.
+        """
+        total = 0
+        for row in spreadsheet:
+            total += max(row) - min(row)
 
+        return total
 
-def part1(spreadsheet):
-    """
-    Calculate the sum of the differences between the min and the max value in
-    each row.
-    """
-    total = 0
-    for row in spreadsheet.split('\n'):
-        nums = [int(num) for num in row.split()]
-        total += max(nums) - min(nums)
+    @staticmethod
+    def part2(spreadsheet):
+        """
+        Calculate the sum of the quotients of the only two numbers on each row
+        such that one evenly divides the other.
+        """
+        total = 0
+        for row in spreadsheet:
+            for i, numerator in enumerate(row):
+                for j, denominator in enumerate(row):
+                    if i != j and numerator % denominator == 0:
+                        total += numerator // denominator
+                        break
 
-    return total
-
-
-def part2(spreadsheet):
-    """
-    Calculate the sum of the quotients of the only two numbers on each row
-    such that one evenly divides the other.
-    """
-    total = 0
-    for row in spreadsheet.split('\n'):
-        nums = [int(num) for num in row.split()]
-        for i, numerator in enumerate(nums):
-            for j, denominator in enumerate(nums):
-                if i != j and numerator % denominator == 0:
-                    total += numerator // denominator
-                    break
-
-    return total
+        return total
 
 
 if __name__ == '__main__':
-    main()
+    Solution.main()

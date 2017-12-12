@@ -1,4 +1,4 @@
-from solutions import day03
+from solutions.day03 import Solution
 
 
 def test_day03_part1():
@@ -14,7 +14,7 @@ def test_day03_part1():
     }
 
     for address, expected in test_cases.items():
-        assert day03.part1(address) == expected
+        assert Solution.part1(address) == expected
 
 
 def test_day03_part2():
@@ -27,4 +27,4 @@ def test_day03_part2():
     }
 
     for address, expected in test_cases.items():
-        assert day03.part2(address) == expected
+        assert Solution.part2(address) == expected

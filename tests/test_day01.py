@@ -1,4 +1,4 @@
-from solutions import day01
+from solutions.day01 import Solution
 
 
 def test_day01_part1():
@@ -11,7 +11,7 @@ def test_day01_part1():
     }
 
     for sequence, expected in test_cases.items():
-        assert day01.part1(sequence) == expected
+        assert Solution.part1(sequence) == expected
 
 
 def test_day01_part2():
@@ -25,4 +25,4 @@ def test_day01_part2():
     }
 
     for sequence, expected in test_cases.items():
-        assert day01.part2(sequence) == expected
+        assert Solution.part2(sequence) == expected

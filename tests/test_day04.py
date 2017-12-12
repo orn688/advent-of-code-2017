@@ -1,4 +1,4 @@
-from solutions import day04
+from solutions.day04 import Solution
 
 
 def test_day04_part1():
@@ -9,7 +9,7 @@ def test_day04_part1():
     }
 
     for passphrases, expected in test_cases.items():
-        assert day04.part1(passphrases) == expected
+        assert Solution.part1(passphrases) == expected
 
 
 
@@ -23,4 +23,4 @@ def test_day04_part2():
     }
 
     for passphrases, expected in test_cases.items():
-        assert day04.part2(passphrases) == expected
+        assert Solution.part2(passphrases) == expected

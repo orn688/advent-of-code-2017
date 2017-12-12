@@ -1,4 +1,4 @@
-from solutions import day05
+from solutions.day05 import Solution
 
 
 def test_day05_part1():
@@ -8,7 +8,7 @@ def test_day05_part1():
     }
 
     for jumps, expected in test_cases.items():
-        assert day05.part1(list(jumps)) == expected
+        assert Solution.part1(list(jumps)) == expected
 
 
 def test_day05_part2():
@@ -19,4 +19,4 @@ def test_day05_part2():
     }
 
     for jumps, expected in test_cases.items():
-        assert day05.part2(list(jumps)) == expected
+        assert Solution.part2(list(jumps)) == expected
