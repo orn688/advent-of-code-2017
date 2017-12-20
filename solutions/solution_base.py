@@ -6,6 +6,8 @@ class SolutionBase:
 
     @classmethod
     def main(cls):
+        print(f'Day {cls.day}')
+
         puzzle_input1 = cls.process_input(get_input_for_day(cls.day))
         print(f'Part 1: {cls.part1(puzzle_input1)}')
 
