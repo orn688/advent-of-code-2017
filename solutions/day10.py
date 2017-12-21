@@ -9,10 +9,6 @@ class Solution(SolutionBase):
     day = 10
 
     @staticmethod
-    def process_input(input_raw):
-        return input_raw
-
-    @staticmethod
     def part1(lengths_string, nums=None):
         lengths = [int(length) for length in lengths_string.split(',')]
 
