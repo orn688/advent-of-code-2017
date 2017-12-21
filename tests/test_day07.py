@@ -1,7 +1,7 @@
 from solutions.day07 import Solution
 
 
-def test_day06_part1():
+def test_day07_part1():
     test_input = (
         'pbga (66)\n'
         'xhth (57)\n'
@@ -22,7 +22,7 @@ def test_day06_part1():
     assert Solution.part1(programs) == 'tknk'
 
 
-def test_day06_part2():
+def test_day07_part2():
     test_input = (
         'pbga (66)\n'
         'xhth (57)\n'
@@ -40,4 +40,5 @@ def test_day06_part2():
     )
 
     programs = Solution.process_input(test_input)
-    assert Solution.part2(programs) == 60
+    assert False
+    # assert Solution.part2(programs) == 60

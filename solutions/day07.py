@@ -1,5 +1,5 @@
 """
-Day 6: Memory Reallocation
+Day 7: Recursive Circus
 """
 import re
 from collections import Counter
@@ -80,16 +80,16 @@ class Solution(SolutionBase):
 
             difference = duplicate_weight - unique_weight
 
-            unique_child = [child
-                            for child in program_children[curr]
-                            if program_weights[child] == unique_weight][0]
-            grandchildren_weights = [program_weights[c] for c in
-                                     program_children[unique_child]]
-            if len(set(grandchildren_weights)) > 1:
-                prev = curr
-                curr = unique_child
-            else:
-                return duplicate_weights[0] if duplicate_weights
+            # unique_child = [child
+            #                 for child in program_children[curr]
+            #                 if program_weights[child] == unique_weight][0]
+            # grandchildren_weights = [program_weights[c] for c in
+            #                          program_children[unique_child]]
+            # if len(set(grandchildren_weights)) > 1:
+            #     prev = curr
+            #     curr = unique_child
+            # else:
+            #     return duplicate_weights[0] if duplicate_weights else 00
 
 
 if __name__ == '__main__':

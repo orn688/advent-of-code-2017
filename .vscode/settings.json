@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/Oliver/.local/share/virtualenvs/advent-of-code-2017-JrUZwHKF",
+    "python.pythonPath": "/Users/Oliver/.virtualenvs/advent-of-code2017-Fw0PlRFU/bin/python3.6",
     "python.unitTest.pyTestEnabled": true,
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.nosetestsEnabled": false,
