@@ -16,7 +16,8 @@ class SolutionBase:
 
     @staticmethod
     def process_input(input_raw):
-        raise NotImplementedError()
+        # Do nothing, by default.
+        return input_raw
 
     @staticmethod
     def part1(puzzle_input):

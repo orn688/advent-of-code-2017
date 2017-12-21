@@ -9,7 +9,10 @@ class Solution(SolutionBase):
 
     @staticmethod
     def process_input(input_raw):
-        return [int(num) for num in input_raw.split('\n')]
+        return [
+            [int(num) for num in row.split()]
+            for row in input_raw.split('\n')
+        ]
 
     @staticmethod
     def part1(spreadsheet):
