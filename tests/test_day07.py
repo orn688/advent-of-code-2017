@@ -40,5 +40,4 @@ def test_day07_part2():
     )
 
     programs = Solution.process_input(test_input)
-    assert False
-    # assert Solution.part2(programs) == 60
+    assert Solution.part2(programs) == 60
