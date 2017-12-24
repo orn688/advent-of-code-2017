@@ -20,9 +20,9 @@ class SolutionBase:
         return input_raw
 
     @staticmethod
-    def part1(puzzle_input):
+    def part1(puzzle_input, *args, **kwargs):
         raise NotImplementedError()
 
     @staticmethod
-    def part2(puzzle_input):
+    def part2(puzzle_input, *args, **kwargs):
         raise NotImplementedError()
