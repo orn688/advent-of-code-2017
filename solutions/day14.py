@@ -1,5 +1,5 @@
 """
-Day 14: Packet Scanners
+Day 14: Disk Defragmentation
 """
 from solution_base import SolutionBase
 import day10
@@ -49,13 +49,13 @@ class Solution(SolutionBase):
 
         while stack:
             coords = stack.pop()
-            for row, col in Solution._neighbors(grid, coords):
+            for row, col in Solution._neighbors(coords):
                 if grid[row][col] == 1 and (row, col) not in visited:
                     visited.add((row, col))
                     stack.append((row, col))
 
     @staticmethod
-    def _neighbors(grid, coords):
+    def _neighbors(coords):
         row, col = coords
         if row > 0:
             yield (row - 1, col)
