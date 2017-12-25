@@ -41,5 +41,5 @@ pipenv run python solutions/inverse_captcha.py # (For example)
 ## Running tests
 
 ```sh
-make tests
+pipenv run pytest
 ```
