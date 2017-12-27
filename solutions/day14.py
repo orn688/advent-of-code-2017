@@ -14,7 +14,7 @@ class Solution(SolutionBase):
 
     @staticmethod
     def process_input(input_raw):
-        key = input_raw.strip()
+        key = input_raw
         grid = []
 
         for row in range(GRID_SIZE):

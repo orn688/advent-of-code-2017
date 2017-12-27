@@ -8,10 +8,6 @@ class Solution(SolutionBase):
     day = 9
 
     @staticmethod
-    def process_input(input_raw):
-        return input_raw.strip()
-
-    @staticmethod
     def part1(stream):
         total_score = 0
         in_garbage = False
