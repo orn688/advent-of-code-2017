@@ -55,6 +55,5 @@ class Solution(SolutionBase):
         return group_count
 
 
-
 if __name__ == '__main__':
     Solution.main()
